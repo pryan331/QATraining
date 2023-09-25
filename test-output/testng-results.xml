@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-09-06T19:04:16 CDT" name="MyTestSuite" finished-at="2023-09-06T19:04:23 CDT" duration-ms="7087">
+    <groups>
+    </groups>
+    <test started-at="2023-09-06T19:04:16 CDT" name="selenium test" finished-at="2023-09-06T19:04:23 CDT" duration-ms="7087">
+      <class name="selenium.OpenGoogleTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:selenium.OpenGoogleTest@327b636c]" started-at="2023-09-06T19:04:16 CDT" name="setUp" finished-at="2023-09-06T19:04:22 CDT" duration-ms="5965" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="openGoogle()[pri:0, instance:selenium.OpenGoogleTest@327b636c]" started-at="2023-09-06T19:04:22 CDT" name="openGoogle" finished-at="2023-09-06T19:04:23 CDT" duration-ms="907" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openGoogle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:selenium.OpenGoogleTest@327b636c]" started-at="2023-09-06T19:04:23 CDT" name="tearDown" finished-at="2023-09-06T19:04:23 CDT" duration-ms="175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- selenium.OpenGoogleTest -->
+    </test> <!-- selenium test -->
+  </suite> <!-- MyTestSuite -->
+</testng-results>

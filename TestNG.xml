@@ -1,0 +1,55 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="My Test">
+    <test name="parameterized Test" enabled="false">
+        <parameter name="param1" value="this is string"/>
+        <parameter name="param2" value="123"/>
+        <classes>
+            <class name="testNG.Annotations"/>
+            <class name="testNG.DependentTest"/>
+        </classes>
+    </test>
+    <test name="group example" enabled="false">
+        <groups>
+            <run>
+                <include name="functionalTest"/>
+                <include name="SmokeTest"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="testNG.Messagetest"/>
+        </classes>
+    </test>
+    <test name="Chrometest" enabled="false">
+        <parameter name="browser" value="chrome" />
+        <classes>
+            <class name="selenium.MultiBrowserTest" />
+        </classes>
+    </test>
+    <test name="fireFoxTest" enabled="false">
+        <parameter name="browser" value="firefox" />
+        <classes>
+            <class name="selenium.MultiBrowserTest" />
+        </classes>
+    </test>
+    <test name="selenium test" enabled="false">
+        <classes>
+            <!-- <class name="selenium.OpenGoogleTest" /> -->
+            <!-- <class name="selenium.OpenOrangeTest" /> -->
+            <class name="selenium.OpenSlackTest" />
+        </classes>
+    </test>
+    <test name="restAssuredTest">
+        <parameter name="newUserID" value="5178397" />
+        <classes>
+            <class name="ExtendReport.TestRestAssuredAPIExtent">
+                <methods>
+                    <include name="testPostRequest"/>
+                    <include name="testPutRequest"/>
+                    <include name="testDeleteRequest"/>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MyTestSuite">
+    <test name="MyTest" enabled="false">
+        <classes>
+            <class name="testNG.Messagetest" />
+            <class name="testNG.Annotations"/>
+            <class name="testNG.DependentTest"/>
+        </classes>
+    </test>
+    <!-- Specify the HTML report location using a system property -->
+    <listeners>
+        <listener class-name="org.testng.reporters.EmailableReporter" />
+        <listener class-name="org.testng.reporters.XMLReporter" />
+        <listener class-name="org.testng.reporters.SuiteHTMLReporter" />
+        <listener class-name="org.testng.reporters.TestHTMLReporter" />
+    </listeners>
+    <parameter name="outputdir" value="test-output/TestNGReports"/>
+    <test name="selenium test">
+        <classes>
+            <class name="selenium.OpenGoogleTest" />
+        </classes>
+    </test>
+</suite>
+
+
+
